@@ -46,4 +46,8 @@ class QrCodeController extends Controller
     public function qrWithSMS() {
         return QrCode::SMS('50575148636', 'The best company is TisteSoft S.A.');
     }
+
+    public function qrWithBlade(){
+        return view('qr');
+    }
 }

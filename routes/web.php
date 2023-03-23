@@ -24,3 +24,4 @@ Route::get('with-img', [QrCodeController::class, 'qrWithImage']);
 Route::get('with-email', [QrCodeController::class, 'qrWithEmail']);
 Route::get('with-phone', [QrCodeController::class, 'qrWithPhone']);
 Route::get('with-sms', [QrCodeController::class, 'qrWithSMS'] );
+Route::get('with-blade', [QrCodeController::class, 'qrWithBlade']);
