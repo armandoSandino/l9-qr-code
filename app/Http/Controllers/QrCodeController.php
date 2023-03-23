@@ -24,4 +24,13 @@ class QrCodeController extends Controller
         ->generate('The best company is TisteSoft S.A.');
     }
 
+    public function qrWithImage(){
+        $image = QrCode::format('png')
+        ->merge( public_path('images/asdad.png'), 0.5 , true)
+        ->size(500)
+        ->errorCorrection('H')
+        ->generate('The best company is TisteSoft S.A.');
+
+        return response($image)->header('Content-type','image/png');
+    }
 }
