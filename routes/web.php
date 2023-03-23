@@ -19,3 +19,4 @@ Route::get('/', function () {
 */
 
 Route::get('/', [QrCodeController::class, 'show'] );
+Route::get('with-color', [QrCodeController::class, 'qrWithColor']);
