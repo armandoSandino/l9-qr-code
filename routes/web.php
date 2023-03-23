@@ -22,3 +22,4 @@ Route::get('/', [QrCodeController::class, 'show'] );
 Route::get('with-color', [QrCodeController::class, 'qrWithColor']);
 Route::get('with-img', [QrCodeController::class, 'qrWithImage']);
 Route::get('with-email', [QrCodeController::class, 'qrWithEmail']);
+Route::get('with-phone', [QrCodeController::class, 'qrWithPhone']);

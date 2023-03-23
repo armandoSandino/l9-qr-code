@@ -38,4 +38,8 @@ class QrCodeController extends Controller
         return QrCode::size(500)
         ->email('jonwinlive@gmail.com','The best company is TisteSoft S.A.', 'Represents to Nicaragua');
     }
+    
+    public function qrWithPhone(){
+        return QrCode::phoneNumber('50575148636');
+    }
 }
