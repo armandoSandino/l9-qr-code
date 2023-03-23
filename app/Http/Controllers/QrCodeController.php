@@ -33,4 +33,9 @@ class QrCodeController extends Controller
 
         return response($image)->header('Content-type','image/png');
     }
+
+    public function qrWithEmail(){
+        return QrCode::size(500)
+        ->email('jonwinlive@gmail.com','The best company is TisteSoft S.A.', 'Represents to Nicaragua');
+    }
 }
