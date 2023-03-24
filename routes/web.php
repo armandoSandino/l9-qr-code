@@ -25,3 +25,12 @@ Route::get('with-email', [QrCodeController::class, 'qrWithEmail']);
 Route::get('with-phone', [QrCodeController::class, 'qrWithPhone']);
 Route::get('with-sms', [QrCodeController::class, 'qrWithSMS'] );
 Route::get('with-blade', [QrCodeController::class, 'qrWithBlade']);
+
+Route::get('custom1', [QrCodeController::class, 'qrCustom1']);
+Route::get('custom2', [QrCodeController::class, 'qrCustom2']);
+Route::get('custom3', [QrCodeController::class, 'qrCustom3']);
+
+Route::get('custom4', [QrCodeController::class, 'qrCustom4']);
+Route::get('custom5', [QrCodeController::class, 'qrCustom5']);
+Route::get('custom6', [QrCodeController::class, 'qrCustom6']);
+Route::get('custom7', [QrCodeController::class, 'qrCustom7']);
