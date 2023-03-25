@@ -124,4 +124,14 @@ class QrCodeController extends Controller
         return QrCode::size(200)
         ->geo(51.378638, -0.100897);
     }
+    
+    //generate with wifi
+    public function qrCustom8(){
+        return QrCode::size(200)->wiFi([
+            'encryption' => 'WPA/WEP',
+            'ssid' => 'TisteSoft. S.A.',
+            'password' => 'tistesoftsa',
+            'hidden' => 'Whether the network is a hidden SSID or not.'
+        ]);
+    }
 }

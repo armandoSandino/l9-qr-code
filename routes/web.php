@@ -34,3 +34,4 @@ Route::get('custom4', [QrCodeController::class, 'qrCustom4']);
 Route::get('custom5', [QrCodeController::class, 'qrCustom5']);
 Route::get('custom6', [QrCodeController::class, 'qrCustom6']);
 Route::get('custom7', [QrCodeController::class, 'qrCustom7']);
+Route::get('custom8', [QrCodeController::class, 'qrCustom8']);
